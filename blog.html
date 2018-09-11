@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="charset" content="UTF-8">
+	<link rel="stylesheet" type="text/css" href=".css/main.css">
+	<title>Code Review 1</title>
+</head>
+<body>
+<div ID="main_content">
+
+	<div class="heading">
+			<div><img src="./img/codefactory-vienna-logo.png" alt="logo" class="logoimg"></div>
+			<div class="logotext"><p>Tamas Olaszki - I am a future Full Stack Web Developer</p></div>
+	</div>
+
+  	<div class="navigation">
+  		<nav>
+			<ul class="nav">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT ME</a></li>
+				<li><a href="blog.html">BLOG</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+  	</div>
+
+  	<div class="aboutcontainer">
+ 
+  	</div>
+
+
+	<div class="title_line">
+  		<p class="title">CHIT-CHAT ABOUT MY GREATEST HACK</p>
+	</div>
+
+
+	<div class="content">
+
+		<article class="content_format">
+			<h1>Hacking the FBI’s Androids with 0day</h1>
+			<p>After a number of episodes with no hacks, or any time in front of a screen, it’s good to see Elliot in his natural element again. This episode starts with our antihero scripting away to create a new exploit to hack the FBI. Though a lot seems to happen on Elliot’s screen, his monologue is what really gives you the technical details you need to understand the hack. Let’s unpack this scene.<br><br>
+
+			First, what happens on his screen? This scene dynamically cuts between the many tasks and windows Elliot is working on, but only one of them has anything do with the FBI hack. In a wide shot, you see the four main windows he has up.<br>
+
+			<video autobuffer autoloop loop controls class="videocss">
+				<source src="./vid/mr_robot.webm">
+				<source src="./vid/mr_robot.m4v">
+				<object type="video/ogg" data="./vid/mr_robot.webm">
+				<param name="src" value="./vid/mr_robot.ogv">
+				<param name="autoplay" value="false">
+				<param name="autoStart" value="0">
+				</object>
+			</video>
+
+			The top windows pertain to the darkweb server migration project Elliot is supposed to be doing for Ray. In the top left window, he ran a command to install and update Tor, and in the top right Elliot unpacked the compressed backups of the “Marketplace” site (and its Tor configuration) onto a new server. In the bottom right window, he’s still chatting with Darlene on IRC. By the way, I didn’t spell it out in last week’s Rewind article, but her IRC handle, D0loresH4ze, is a reference to a character in the Lolita (which also explains her heart sunglasses). Anyway, the bottom right window is the only one relevant to the FBI hack. That’s where Elliot is writing a Ruby script.<br><br>
+
+			Now the screens alone don’t tell you much about Elliot’s hack. For that, you need his narrative. I won’t cover it verbatim, but the first clue comes when Elliot mentions he’s using “Android zero days” to “own the FBI standard-issue smartphone.” This tells you two things. First, it confirms what you hopefully suspected after last episode. He’s targeting the FBI’s Android devices. Second, the reference to “zero days” conveys that Elliot has apparently found some unpatched vulnerabilities in Android. He can presumably leverage these vulnerabilities to gain control of the FBI’s Android devices. Though he uses flowery language to discuss the process, Elliot essentially tells us that he’s writing a script to exploit these zero-day Android flaws.<br>
+
+			<img src="https://cdn.geekwire.com/wp-content/uploads/2016/08/FourScreens-630x394.png" alt="logo" class="blog_content_images">
+			So far this is all very accurate. Any software, including Android, can and will have vulnerabilities. In fact, there have been many cases where researchers have found flaws in Android components. Hackers also need to write scripts of code to exploit these vulnerabilities. Code savvy geeks may notice Elliot is writing his script in Ruby. Even that language choice is realistic since Metasploit, the most popular exploit framework, uses Ruby.<br><br>
+
+			By the way, I did notice one small “behind-the- scenes” detail. This scene implies Elliot’s writing a custom exploit for a new vulnerability, but it turns out the show just has him typing an existing Metasploit exploit from real life.<br><br>
+
+			While studying the screenshots to find clues about Elliot’s Android vulnerability, I noticed a reference to “KNOX Browser RCE”. Knox is a proprietary security platform built into Samsung Android devices, and RCE stands for Remote Code Execution, which allows a remote attacker to run code on your system. With a little Google research, I learned that researchers found a real Knox RCE vulnerability in 2014. More interestingly, a penetration testing company wrote a Metasploit exploit for that flaw. Comparing Elliot’s script to this real world exploit, it is clearly the show’s source material. In any case, this is further proof of how accurately the show portrays hacking by actually using real world exploits.</p>
+		</article>
+  	
+	</div>
+
+	<hr>
+
+	<div class="footer">
+   		<img src="./img/codefactory-vienna-logo.png" alt="footer_logo" class="footerlogo">
+   		<p class="footertext">Tamas Olaszki - CodeFactory 2018</p>
+	</div>
+
+</div>
+
+</body>
+</html>
