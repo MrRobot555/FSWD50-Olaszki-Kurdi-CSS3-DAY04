@@ -1,0 +1,185 @@
+/* reseting every parameter before start (previously detected bug corrected) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* reset completed */
+/* defining variables in SCSS */
+#main_content {
+  width: 50%;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.heading {
+  overflow: hidden;
+  background-color: #EDEDED; }
+
+.navigation {
+  padding: 0; }
+
+.logoimg {
+  width: 30%;
+  float: left;
+  /* border: 1px solid red; */
+  margin: 0.7vw 0 0.7vw 0; }
+
+.logotext {
+  /* border: 1px solid green; */
+  float: left;
+  margin-top: 2.6vw;
+  font-weight: bold;
+  font-size: 1.1vw; }
+
+.nav {
+  list-style-type: none;
+  background-color: #653D3D;
+  width: 100%;
+  font-size: 1.1vw;
+  padding: 0; }
+  .nav li {
+    display: inline-block;
+    /* padding :  14px 32px 14px 32px; */
+    padding: 0.7vw 0 0.7vw 1.5vw; }
+    .nav li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold; }
+
+.herotext {
+  font-size: 4vw;
+  text-align: center;
+  margin: 3vw 0 3vw 0; }
+
+.title_line {
+  width: 100%;
+  background-color: #978484;
+  margin-bottom: 1vw; }
+
+.title {
+  font-size: 1.1vw;
+  padding: 0.7vw 0 0.7vw 1.5vw;
+  color: white;
+  font-weight: bold; }
+
+.content_table {
+  width: 100%; }
+
+.content_images {
+  width: 21vw;
+  height: 11vw; }
+
+.rightside {
+  padding: 0 0 2.5vw 0;
+  font-size: 1.1vw;
+  font-weight: bold; }
+
+.leftside {
+  padding: 0 6vw 2.5vw 0;
+  font-size: 1.1vw;
+  font-weight: bold; }
+
+hr {
+  border: none;
+  height: 0.5vw;
+  /* Set the hr color */
+  color: #978484;
+  /* old IE */
+  background-color: #978484;
+  /* Modern Browsers */ }
+
+.footerlogo {
+  width: 20%;
+  height: auto;
+  display: block;
+  margin: 0 auto 1vw auto;
+  padding-top: 10px; }
+
+.footertext {
+  font-size: 1.1vw;
+  text-align: center;
+  color: #6F6F6F; }
+
+/* extra pages */
+h1 {
+  font-size: 3vw;
+  padding: 1vw 0 1vw 0; }
+
+.content_format {
+  padding: 0.7vw 1.5vw 0.7vw 1.5vw;
+  text-align: justify;
+  font-size: 1.1vw; }
+
+.aboutcontainer {
+  background-image: url("./img/extra/about_img.png");
+  padding: 7.6vw 0 7.6vw 0;
+  background-size: cover; }
+
+.blog_content_images {
+  width: 100%;
+  height: auto;
+  padding: 1vw 0 1vw 0; }
+
+.videocss {
+  width: 100%;
+  height: auto;
+  padding: 1vw 0 1vw 0; }
+
+form {
+  padding: 1vw 0 2vw 0; }
+
+input, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  width: 100%;
+  max-width: 100%;
+  /* textarea's width can be set by mouse on the site, this limits its with to page margin */
+  padding: 0.7vw 0.7vw;
+  margin: 0.5vw 0 1vw 0;
+  box-sizing: border-box;
+  border-radius: 0.5vw;
+  background-color: #9d9d9d;
+  /*dark gray input fields */
+  color: white; }
+
+input[type=button], input[type=submit] {
+  background-color: #4CAF50;
+  /*green submit button */
+  width: 100%;
+  border: none;
+  color: white;
+  padding: 1vw 2vw;
+  text-decoration: none;
+  margin: 0.2vw 0.2vw;
+  cursor: pointer; }
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1;
+  /* Firefox */ }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white; }
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white; }
+
+/*# sourceMappingURL=style.css.map */
