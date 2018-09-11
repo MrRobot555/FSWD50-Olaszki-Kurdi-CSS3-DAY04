@@ -76,10 +76,33 @@
 }
 
 @media screen and (max-width: 1500px) {
-   .sidebar {
-       display: none;
-   }
-   .container {
+	.nav {
+		font-size: 15px;
+	}
+ }
+
+
+ @media screen and (max-width: 1200px) {
+	.nav > li {
+		display : block;
+		/* padding :  14px 32px 14px 32px; */
+		padding: 0.7vw 0.5vw 0.7vw 0.5vw;
+}
+	.side_content {
+		margin-top: 200px;
+		}
+	.nav {
+		font-size: 25px;
+		text-align: center;
+	}
+
+
+ @media screen and (max-width: 900px) {
+	.sidebar {
+		display: none;
+	}
+	.container {
 		width: 100%;
-   }
-  }
+	}
+
+ }
